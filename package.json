@@ -1,0 +1,22 @@
+{
+  "name": "chefUni",
+  "version": "1.0.0",
+  "description": "recipe app",
+  "main": "chefUEServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkimnguyen/chefUni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkimnguyen/chefUni/issues"
+  },
+  "homepage": "https://github.com/dkimnguyen/chefUni",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
