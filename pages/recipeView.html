@@ -4,11 +4,10 @@
 <meta charset="UTF-8">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap-theme.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap-theme.min.css">
+  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\recipeList.css">
+
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
-  
 
 <link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -61,92 +60,56 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><span class="brand-border">Chef University</span></h1>
-                        <p class="intro-text">Teaching people how to cook.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                           <span class="glyphicon glyphicon-chevron-down"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id aliquet leo. Donec eget aliquam sem. Mauris et cursus nisi.</p>
-            </div>
-        </div>
-    </section>
+    <!-- The following is the type of html that will need to be returned as html code for the dynamic update/generation of recipe's on this page
 
-    <!-- Download Section -->
-    <section id="recipe" class="content-section text-center">
-
-        <div class="recipe-section">
-
-                    <h2>Recipies</h2>
-
-
-       <!-- <iframe src="temp.html" width="90%" height="90%" scrolling="yes" ></iframe>
-        This section can also contain :
-
-        <iframe : srcdoc="HTML_CODE">
-
-Using the srcdoc will make it really easy to display the dynamic recipies generated using the json files instead of having to diaplay a full .html page
+    The images will need to be put in the specified folder. The json will just have a url to its specific image.
         -->
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
+            <!-- Page Content -->
 
-                    <p>You can view recipes here.</p>
+<p></p>
+    <div class="container">
 
-                    <a href="recipeList.html" class="btn btn-danger" role="button">Visit Recipe Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+        <!-- Portfolio Item Heading -->
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Chefs</h2>
-                <p>Feel free tocontact other chefs and user by emailing or commenting on shared recipies.</p>
-                <p><a href="">email@address.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/" class="btn btn-info"><span class="glyphicon glyphicon-twitter"></span> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="" class="btn btn-primary"><span class="glyphicon glyphicon-facebook"></span><span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="" class="btn btn-danger"><span class="glyphicon glyphicon-google-plus"></span><span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Recipe Name
+                    <small>Chef Name</small>
+                </h1>
             </div>
         </div>
-    </section>
+        <!-- /.row -->
+        <!-- Portfolio Item Row -->
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="../images/placeholder/400x400.jpg" alt="">
+            </div>
+            <div class="col-md-5">
 
-    <!-- Map Section -->
-    <div id="map"></div>
+                <h4>Ingredients : </h4>
+                    <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Dolor Sit Amet</li>
+                    <li>Consectetur</li>
+                    <li>Adipiscing Elit</li>
+                </ul>
+<p></p>
+                <h4>Prep Time : </h4>
+                </div>
+            <div class="col-md-8">
+            <p></p>
+                <h2>Cooking Instructions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                <h3>Project Details</h3>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; and all the good stuff.</p>
+            </div>
+
         </div>
-    </footer>
+        <!-- /.row -->
 
+        <hr>
 
 <div class="modal fade" id="user">
 <div class="container">
