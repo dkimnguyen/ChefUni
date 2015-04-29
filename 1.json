@@ -1,0 +1,20 @@
+{
+    "name": "Nacho",
+    "description": "These nachos can be served as a meal, but all the good stuff makes for a great appetizer or snack while watching a game or a quick lunch for your family and friends.",
+    "servings": "6",
+    "ingredients": ["1 pound of ground beef", 
+                    "1 onion, finedly diced",
+                    "salf and pepper to taste",
+                    "2 cups shredded Cheddar cheese",
+                    "1 can of refried beans",
+                    "1 package of tortilla chips",
+                    "1 fresh jalapeno pepper, sliced"],
+    "steps":["In a large frying pan, brown ground beef with onion, salt and pepper over medium heat. Break the meat into very small pieces while it is cooking. After the meat is thoroughly cooked, drain off the grease.",
+            "Arrange chips on a microwavable platter. Spread beans over the chips. Layer with 1/2 of the cheese, the ground beef mixture, and remaining cheese. Arrange jalapeno peppers on top.",
+            "Microwave on medium-high until cheese has melted. Serve immediately."],
+    "prep": "5 mins",
+    "cooktime": "5 mins",
+    "image": "http://images.media-allrecipes.com/userphotos/250x250/735934.jpg"
+    //recipe link
+//http://allrecipes.com/Recipe/Over-the-Top-Nachos/Detail.aspx?evt19=1&referringHubId=1228
+}
