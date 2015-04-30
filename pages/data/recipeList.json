@@ -1,11 +1,50 @@
 [
     {
-        "name": "Nacho",
-        "description": "These nachos can be served as a meal, but all the good stuff makes for a great appetizer or snack while watching a game or a quick lunch for your family and friends.",
-        "image": "http://images.media-allrecipes.com/userphotos/250x250/735934.jpg",
-        "servings": "6",
-        "prep": "5 mins",
-        "cooktime": "5 mins",
+        "name" : "Shoyu Ramen",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "3 days",
+        "description": "Lush pork, toothsome noodles, and a heady broth you can't stop slurping—it's no wonder ramen joints are drawing droves of diners, off-duty chefs, and seemingly everyone on your Instagram feed. Bringing shoyu ramen home takes a trip to an Asian market, three days of work, and your largest pot, but this low-stress (really!) labor of love might be the best soup you'll ever make.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe1.jpg",
+        "instructions": "PREPARATION",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    },
+        {
+        "name" : "Breakfast Tacos",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "3 days",
+        "description": "Super-flavorful (and super-easy) homemade fresh chorizo and crispy hash brown potatoes take these tasty breakfast tacos to the next level.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe2.jpg",
+        "instructions": "",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    },
+        {
+        "name" : "Gardeners Pizza ",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "3 days",
+        "description": "Super-flavorful (and super-easy) homemade fresh chorizo and crispy hash brown potatoes take these tasty breakfast tacos to the next level.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe3.jpg",
+        "instructions": "",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    },
+        {
+        "name" : "Pizza Margerhita",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "3 days",
+        "description": "Super-flavorful (and super-easy) homemade fresh chorizo and crispy hash brown potatoes take these tasty breakfast tacos to the next level.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe4.jpg",
+        "instructions": "",
         "sharedWith": ["Bianca", "Ishan", "Kim"]
     }
 ]
