@@ -6,6 +6,8 @@
         "servings": "6",
         "prep": "5 mins",
         "cooktime": "5 mins",
-        "sharedWith": ["Bianca", "Ishan", "Kim"]
+        "sharedWith": ["Bianca", "Ishan", "Kim"],
+        "ingredients": "ingredient list",
+        "instructions": "instructions"
     }
 ]

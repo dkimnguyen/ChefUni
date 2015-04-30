@@ -2,28 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\recipeList.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\recipeList.css">
 
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
-
-<link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
+    
+    <link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 </head>
 
-<body>
- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<body onload="initXHR('recipe')">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-
                    <span class="light">
                    <span class="glyphicon glyphicon-chevron-right"></span>Chef</span>Uni
                 </a>
@@ -39,7 +38,7 @@
                     <li>
                         <a class="page-scroll" href="#recipe"><span class="glyphicon glyphicon-search"></span>  Search</a>
                     </li>
-                     <li>
+                    <li>
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
@@ -56,7 +55,7 @@
                             </li><li>
                         <a class="page-scroll" href="#contact">Share</a>
                     </li>
-                     <li>
+                    <li>
                         <a class="page-scroll" href="#user" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Log In </a>
                     </li>
                 </ul>
@@ -67,145 +66,88 @@
     </nav>
 
 
+    <!-- Page Content -->
 
-
-
-
-    <!-- The following is the type of html that will need to be returned as html code for the dynamic update/generation of recipe's on this page
-
-    The images will need to be put in the specified folder. The json will just have a url to its specific image.
-        -->
-            <!-- Page Content -->
-
-<p></p>
+    <p></p>
     <div class="container">
-
-        <!-- Portfolio Item Heading -->
-        <div class="row">
-
-
-            <div class="col-lg-12">
-                <h1 class="page-header">Recipe Name
-                    <small>Chef Name</small>
-                </h1>
-            </div>
+        <div id="recipe">
         </div>
-        <!-- /.row -->
-        <!-- Portfolio Item Row -->
-        <div class="row">
-            <div class="col-md-5">
-                <img class="img-responsive" src="../images/placeholder/400x400.jpg" alt="">
+
+        <!-- Comments Form -->
+        <h2>Leave a Comment:</h2>
+        <form role="form">
+            <div class="form-group">
+                <textarea class="form-control" rows="6"></textarea>
             </div>
-            <div class="col-md-5">
-
-                <h4>Ingredients : </h4>
-                    <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
-<p></p>
-                <h4>Prep Time : </h4>
-                </div>
-            <div class="col-md-8">
-            <p></p>
-                <h2>Cooking Instructions</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>Project Details</h3>
-
-            </div>
-
-        </div>
-        <!-- /.row -->
-
+            <a class="btn btn-xl" href="recipeView.html">SUBMIT</a>
+        </form>
         <hr>
 
+        <!-- Posted Comments -->
 
-                <!-- Comments Form -->
-
-                    <h2>Leave a Comment:</h2>
-                    <form role="form">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="6"></textarea>
-                        </div>
-                           <a class="btn btn-xl" href="recipeView.html">SUBMIT</a>
-                    </form>
-
-
-                <hr>
-
-                <!-- Posted Comments -->
-
-                <!-- COMMENT START -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Comment
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                </div>
-
-
-                <!-- COMMENT END -->
-
-
-               <!-- COMMENT START -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Comment
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                </div>
-                <!-- COMMENT END -->
-
-                <hr>
+        <!-- COMMENT START -->
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://placehold.it/64x64" alt="">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Comment
+                    <small>August 25, 2014 at 9:30 PM</small>
+                </h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
             </div>
+        </div>   
+        <!-- COMMENT END -->
 
-
-<div class="modal fade" id="user">
-<div class="container">
-  <div class="row">
-    <form class="form-signin mg-btm">
-      <h3 class="heading-desc">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-    Login</h3>
-
-    <div class="main">
-
-    <input type="text" class="form-control" placeholder="Email" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
-    <span class="clearfix"></span>
+        <!-- COMMENT START -->
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="http://placehold.it/64x64" alt="">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Comment
+                    <small>August 25, 2014 at 9:30 PM</small>
+                </h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
         </div>
-    <div class="login-footer">
-    <div class="row">
-                        <div class="col-xs-6 col-md-6">
-                            <div class="left-section">
-                <a href="">Forgot your password?</a>
-                <a href="">Sign up now</a>
-              </div>
-                        </div>
-                        <div class="col-xs-1 col-md-6 pull-right">
-                            <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
+        <!-- COMMENT END -->
+        <hr>
+    </div>
 
-                        </div>
+
+    <div class="modal fade" id="user">
+        <div class="container">
+            <div class="row">
+                <form class="form-signin mg-btm">
+                    <h3 class="heading-desc">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        Login
+                    </h3>
+
+                    <div class="main">
+                        <input type="text" class="form-control" placeholder="Email" autofocus>
+                        <input type="password" class="form-control" placeholder="Password">
+                        <span class="clearfix"></span>
+                    </div>
+                    <div class="login-footer">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <div class="left-section">
+                                    <a href="">Forgot your password?</a>
+                                    <a href="">Sign up now</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-md-6 pull-right">
+                                <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
+                            </div>
                         </div>
                     </div>
-
+                </form>
+            </div>      
+        </div>
     </div>
-      </form>
-  </div>
-</div>
-    </div><!-- /.modal-content -->
+    <!-- /.modal-content -->
 
     <!-- jQuery -->
     <script src="..\node_modules\bootstrap\dist\js\jquery.js"></script>
@@ -218,7 +160,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="..\node_modules\bootstrap\dist\js\grayscale.js"></script>
-
+    
+    <script src="recipe.js"></script>
 
 </body>
 </html>
