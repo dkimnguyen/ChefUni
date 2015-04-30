@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\recipeList.css">
+  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap-theme.css">
+  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap-theme.min.css">
 
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
 
-<link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -66,58 +67,101 @@
         <!-- /.container -->
     </nav>
 
-    <!-- The following is the type of html that will need to be returned as html code for the dynamic update/generation of recipe's on this page
-
-    The images will need to be put in the specified folder. The json will just have a url to its specific image.
-        -->
-            <!-- Page Content -->
-
-<p></p>
-    <div class="container">
-
-        <!-- Portfolio Item Heading -->
-        <div class="row">
 
 
-            <div class="col-lg-12">
-                <h1 class="page-header">Chef Name
-                    <small>Restraunt Name</small>
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-        <!-- Portfolio Item Row -->
-        <div class="row">
-            <div class="col-md-5">
-                <img class="img-responsive" src="../images/placeholder/400x400.jpg" alt="">
-                <a class="btn btn-xl" href="recipeView.html">Ask for help <span class="glyphicon glyphicon-comment"></span></a>
-            </div>
-
-            <div class="col-md-5">
-
-                <h4>Specialties : </h4>
-                    <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
-<p></p>
-                <h4>Restraunts : </h4>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"><span class="brand-border">Chef University</span></h1>
+                        <p class="intro-text">Teaching people how to cook.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                           <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
                 </div>
-            <div class="col-md-8">
-            <p></p>
-
-                <h2>Chef Bio</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-
             </div>
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+          <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>People Who asked for your help</h2>
+            </div>
         </div>
         <!-- /.row -->
 
-        <hr>
+        <!--HELP REQUEST START -->
+        <div class="row text-center">
 
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Recipe Name</h3>
+                        <p>User name, description of recipe etc...</p>
+                        <p>
+                            <a href="recipeView.html" class="btn btn-sucess">View Recipe</a> <a href="#" class="btn btn-xl">Dismiss</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--HELP REQUEST END -->
+       <!--HELP REQUEST START -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Recipe Name</h3>
+                        <p>User name, description of recipe etc...</p>
+                        <p>
+                            <a href="recipeView.html" class="btn btn-sucess">View Recipe</a> <a href="#" class="btn btn-xl">Dismiss</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--HELP REQUEST END -->
+               <!--HELP REQUEST START -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Recipe Name</h3>
+                        <p>User name, description of recipe etc...</p>
+                        <p>
+                            <a href="recipeView.html" class="btn btn-sucess">View Recipe</a> <a href="#" class="btn btn-xl">Dismiss</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--HELP REQUEST END -->
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy;</p>
+        </div>
+    </footer>
 
 <div class="modal fade" id="user">
 <div class="container">
