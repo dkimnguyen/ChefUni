@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\create.css">
+  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap-theme.css">
+  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap-theme.min.css">
 
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
 
-<link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -66,74 +67,101 @@
         <!-- /.container -->
     </nav>
 
-<!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Create New Recipe</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
 
 
-                                   <a href="#" class="btn" onclick="document.getElementById('fileID').click(); return false;" />Upload Recipe Pic</a>
-                            <input type="file" id="fileID" style="visibility: hidden;" />
-
-
-                                <div class="form-group">
-                                 <label>Name</label>
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-
-                                <div class="form-group">
-                                <label>Recipe Name</label>
-                                    <input type="email" class="form-control" placeholder="Recipe Name *" id="recipeName" required data-validation-required-message="Please enter Recipe Name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-
-                                <div class="form-group">
-                               <label>Ingredients Required</label>
-                                    <input type="tel" class="form-control" placeholder="Ingredients *" id="ingredients" required data-validation-required-message="Please enter ingredients.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-
-                                <div class="form-group">
-                               <label>Preperation Time</label>
-                                    <input type="tel" class="form-control" placeholder="Ingredients *" id="ingredients" required data-validation-required-message="Please enter ingredients.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
-
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Instructions*" id="instructions" required data-validation-required-message="Please enter a the instructions."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-
- <a class="page-scroll" href="#recipe"><span class="glyphicon glyphicon-tag"></span> Tags</a>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Finish</button>
-                            </div>
-                        </div>
-                    </form>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"><span class="brand-border">Chef University</span></h1>
+                        <p class="intro-text">Teaching people how to cook.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                           <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+          <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>People Who asked for your help</h2>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!--HELP REQUEST START -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Recipe Name</h3>
+                        <p>User name, description of recipe etc...</p>
+                        <p>
+                            <a href="recipeView.html" class="btn btn-sucess">View Recipe</a> <a href="#" class="btn btn-xl">Dismiss</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--HELP REQUEST END -->
+       <!--HELP REQUEST START -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Recipe Name</h3>
+                        <p>User name, description of recipe etc...</p>
+                        <p>
+                            <a href="recipeView.html" class="btn btn-sucess">View Recipe</a> <a href="#" class="btn btn-xl">Dismiss</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--HELP REQUEST END -->
+               <!--HELP REQUEST START -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Recipe Name</h3>
+                        <p>User name, description of recipe etc...</p>
+                        <p>
+                            <a href="recipeView.html" class="btn btn-sucess">View Recipe</a> <a href="#" class="btn btn-xl">Dismiss</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!--HELP REQUEST END -->
+
     </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy;</p>
+        </div>
+    </footer>
 
 <div class="modal fade" id="user">
 <div class="container">

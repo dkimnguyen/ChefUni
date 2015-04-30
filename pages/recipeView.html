@@ -45,14 +45,19 @@
                     <li>
                         <a class="page-scroll" href="create.html">Create</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="recipeList.html">View</a>
-                    </li>
-                    <li>
+                    <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Browse <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="chefList.html">Chefs</a></li>
+                                <li><a href="recipeList.html">Recipies</a></li>
+                                <li class="divider"></li>
+                                <li><a href="recipeList.html">Shared Recipies</a></li>
+                              </ul>
+                            </li><li>
                         <a class="page-scroll" href="#contact">Share</a>
                     </li>
                      <li>
-                        <a class="page-scroll" href="#user" data-toggle="modal"><span class="glyphicon glyphicon-user"></span></a>
+                        <a class="page-scroll" href="#user" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Log In </a>
                     </li>
                 </ul>
             </div>
@@ -60,6 +65,11 @@
         </div>
         <!-- /.container -->
     </nav>
+
+
+
+
+
 
     <!-- The following is the type of html that will need to be returned as html code for the dynamic update/generation of recipe's on this page
 
@@ -111,6 +121,57 @@
 
         <hr>
 
+
+                <!-- Comments Form -->
+
+                    <h2>Leave a Comment:</h2>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                           <a class="btn btn-xl" href="recipeView.html">SUBMIT</a>
+                    </form>
+
+
+                <hr>
+
+                <!-- Posted Comments -->
+
+                <!-- COMMENT START -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Comment
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+
+
+                <!-- COMMENT END -->
+
+
+               <!-- COMMENT START -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Comment
+                            <small>August 25, 2014 at 9:30 PM</small>
+                        </h4>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+                <!-- COMMENT END -->
+
+                <hr>
+            </div>
+
+
 <div class="modal fade" id="user">
 <div class="container">
   <div class="row">
@@ -118,22 +179,7 @@
       <h3 class="heading-desc">
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
     Login</h3>
-    <div class="social-box">
-      <div class="row mg-btm">
-             <div class="col-md-12">
-                <a href="#" class="btn btn-primary btn-block">
-                  <i class="icon-facebook"></i>    Login with Facebook
-                </a>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-md-12">
-                <a href="#" class="btn btn-info btn-block" >
-                  <i class="icon-twitter"></i>    Login with Twitter
-                </a>
-            </div>
-          </div>
-    </div>
+
     <div class="main">
 
     <input type="text" class="form-control" placeholder="Email" autofocus>
@@ -148,8 +194,10 @@
                 <a href="">Sign up now</a>
               </div>
                         </div>
-                        <div class="col-xs-6 col-md-6 pull-right">
+                        <div class="col-xs-1 col-md-6 pull-right">
                             <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
+
+                        </div>
                         </div>
                     </div>
 
@@ -158,7 +206,6 @@
   </div>
 </div>
     </div><!-- /.modal-content -->
-
 
     <!-- jQuery -->
     <script src="..\node_modules\bootstrap\dist\js\jquery.js"></script>
