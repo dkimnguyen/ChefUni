@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\recipeList.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\recipeList.css">
 
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
-  <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\loginPop.css">
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\home.css">
 
-<link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="..\node_modules\bootstrap\dist\fonts\font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
 </head>
 
-<body>
- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<body onload="initXHR('list')">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-
                    <span class="light">
                    <span class="glyphicon glyphicon-chevron-right"></span>Chef</span>Uni
                 </a>
@@ -39,7 +37,7 @@
                     <li>
                         <a class="page-scroll" href="#recipe"><span class="glyphicon glyphicon-search"></span>  Search</a>
                     </li>
-                     <li>
+                    <li>
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
                     <li>
@@ -51,7 +49,7 @@
                     <li>
                         <a class="page-scroll" href="#contact">Share</a>
                     </li>
-                     <li>
+                    <li>
                         <a class="page-scroll" href="#user" data-toggle="modal"><span class="glyphicon glyphicon-user"></span></a>
                     </li>
                 </ul>
@@ -62,9 +60,9 @@
     </nav>
 
 
-            <!-- Page Content -->
+    <!-- Page Content -->
     <div class="container">
-
+ 
         <!-- Page Heading -->
         <div class="row">
         <p></p>
@@ -73,113 +71,9 @@
             </div>
         </div>
         <!-- /.row -->
-
-
-    <!-- The following is the type of html that will need to be returned as html code for the dynamic update/generation of recipe's on this page
-
-    The images will need to be put in the specified folder. The json will just have a url to its specific image.
-        -->
-
-<!-- START OF  RECIPE -->
-
-        <div class="row">
-            <div class="col-md-4">
-                <a href="recipeView.html">
-                    <img class="img-responsive" src="../images/placeholder/250x250.jpg" alt="">
-                    <p></p>
-                    <span class="glyphicon glyphicon-edit"></span>
-                    <span class="glyphicon glyphicon-remove-sign"></span>
-                    <span class="glyphicon glyphicon-trash"></span>
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h4>Recipe Name</h4>
-                <h5>Description</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="recipeView.html">View Full Recipe <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-            <div class="col-md-3">
-                <h4>Shared With</h4>
-                <li>Person 1</li>
-                <li>Person 2</li>
-                <li>Person 3</li>
-               <p><span class="glyphicon glyphicon-plus-sign"></span></a></p>
-            </div>
+        
+        <div id="list">
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-            <!-- END OF  RECIPE -->
-
-
-<!-- START OF  RECIPE -->
-
-        <div class="row">
-            <div class="col-md-4">
-                <a href="recipeView.html">
-                    <img class="img-responsive" src="../images/placeholder/250x250.jpg" alt="">
-                    <p></p>
-                    <span class="glyphicon glyphicon-edit"></span>
-                    <span class="glyphicon glyphicon-remove-sign"></span>
-                    <span class="glyphicon glyphicon-trash"></span>
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h4>Recipe Name</h4>
-                <h5>Description</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="recipeView.html">View Full Recipe <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-            <div class="col-md-3">
-                <h4>Shared With</h4>
-                <li>Person 1</li>
-                <li>Person 2</li>
-                <li>Person 3</li>
-               <p><span class="glyphicon glyphicon-plus-sign"></span></a></p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-            <!-- END OF  RECIPE -->
-
-            <!-- START OF  RECIPE -->
-
-        <div class="row">
-            <div class="col-md-4">
-                <a href="recipeView.html">
-                    <img class="img-responsive" src="../images/placeholder/250x250.jpg" alt="">
-                    <p></p>
-                    <span class="glyphicon glyphicon-edit"></span>
-                    <span class="glyphicon glyphicon-remove-sign"></span>
-                    <span class="glyphicon glyphicon-trash"></span>
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h4>Recipe Name</h4>
-                <h5>Description</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="recipeView.html">View Full Recipe <span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-
-            <div class="col-md-3">
-                <h4>Shared With</h4>
-                <li>Person 1</li>
-                <li>Person 2</li>
-                <li>Person 3</li>
-               <p><span class="glyphicon glyphicon-plus-sign"></span></a></p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-            <!-- END OF  RECIPE -->
-
 
         <!-- Pagination -->
         <div class="row text-center">
@@ -215,49 +109,48 @@
 
 <div class="modal fade" id="user">
 <div class="container">
-  <div class="row">
-    <form class="form-signin mg-btm">
-      <h3 class="heading-desc">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-    Login</h3>
-    <div class="social-box">
-      <div class="row mg-btm">
-             <div class="col-md-12">
-                <a href="#" class="btn btn-primary btn-block">
-                  <i class="icon-facebook"></i>    Login with Facebook
-                </a>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-md-12">
-                <a href="#" class="btn btn-info btn-block" >
-                  <i class="icon-twitter"></i>    Login with Twitter
-                </a>
-            </div>
-          </div>
-    </div>
-    <div class="main">
-
-    <input type="text" class="form-control" placeholder="Email" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
-    <span class="clearfix"></span>
-        </div>
-    <div class="login-footer">
     <div class="row">
-                        <div class="col-xs-6 col-md-6">
-                            <div class="left-section">
-                <a href="">Forgot your password?</a>
-                <a href="">Sign up now</a>
-              </div>
-                        </div>
-                        <div class="col-xs-6 col-md-6 pull-right">
-                            <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
+        <form class="form-signin mg-btm">
+            <h3 class="heading-desc">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                Login
+            </h3>
+            <div class="social-box">
+                <div class="row mg-btm">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-primary btn-block">
+                            <i class="icon-facebook"></i>    Login with Facebook
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-info btn-block" >
+                            <i class="icon-twitter"></i>    Login with Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <input type="text" class="form-control" placeholder="Email" autofocus>
+                <input type="password" class="form-control" placeholder="Password">
+                <span class="clearfix"></span>
+            </div>
+            <div class="login-footer">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <div class="left-section">
+                            <a href="">Forgot your password?</a>
+                            <a href="">Sign up now</a>
                         </div>
                     </div>
-
+                    <div class="col-xs-6 col-md-6 pull-right">
+                        <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-      </form>
-  </div>
 </div>
     </div><!-- /.modal-content -->
 
@@ -274,6 +167,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="..\node_modules\bootstrap\dist\js\grayscale.js"></script>
 
-
+    <script src="recipeList.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </body>
 </html>

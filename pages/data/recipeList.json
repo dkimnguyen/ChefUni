@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Nacho",
+        "description": "These nachos can be served as a meal, but all the good stuff makes for a great appetizer or snack while watching a game or a quick lunch for your family and friends.",
+        "image": "http://images.media-allrecipes.com/userphotos/250x250/735934.jpg",
+        "servings": "6",
+        "prep": "5 mins",
+        "cooktime": "5 mins",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    }
+]
