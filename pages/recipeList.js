@@ -15,7 +15,6 @@ function retrieveActiveListsFromServer(url) {
 
 		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 			var list = JSON.parse(xmlhttp.responseText);
-            console.log('after JSON.parse');
 			populateListsView('list', list);
 		}
 	}
@@ -24,13 +23,9 @@ function retrieveActiveListsFromServer(url) {
 }
 
 function populateListsView(elementId, list) {
-    console.log('in populate');
 	element = document.getElementById(elementId);
 	var newElement = "";
-    console.log('after document.getELementById');
-    console.log(list.length);
     for (var i = 0; i < list.length; i++) {
-        console.log('in loop');
         newElement += "<div class=\"row\">";
         newElement += "<div class=\"col-md-4\">";
         newElement += "<a href=\"recipeView.html\">";
