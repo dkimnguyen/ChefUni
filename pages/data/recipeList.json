@@ -1,13 +1,49 @@
 [
-    {
-        "name": "Nacho",
-        "description": "These nachos can be served as a meal, but all the good stuff makes for a great appetizer or snack while watching a game or a quick lunch for your family and friends.",
-        "image": "http://images.media-allrecipes.com/userphotos/250x250/735934.jpg",
-        "servings": "6",
-        "prep": "5 mins",
-        "cooktime": "5 mins",
-        "sharedWith": ["Bianca", "Ishan", "Kim"],
-        "ingredients": "ingredient list",
-        "instructions": "instructions"
+   {"name" : "Shoyu Ramen",
+        "chefName" : "Alison Roman",
+        "ingredients": "Kombu dashi and tare:<br>2 pieces dried kombu<br>1/2 cup reduced-sodium soy sauce<br>2 tablespoons dry sake<br>1 tablespoon mirin<br>Pork and stock:<br>1 1/2 pounds boneless pork shoulder<br>Kosher salt, freshly ground pepper<br>2 tablespoons vegetable oil<br>2 pounds chicken necks, backs, and/or wings<br>1 pound pork spareribs<br>2 bunches scallions, chopped<br>2 carrots, peeled, cut into pieces<br>1 head of garlic, halved horizontally<br>1 1 piece ginger, peeled, sliced<br>1/4 cup bonito flakes<br>Ramen and garnishes:<br>3 large eggs<br>6 5-ounce packages fresh thin and wavy ramen noodles (or six 3-ounce packages dried)<br>1/2 cup menma (fermented bamboo shoots)<br>6 scallions, thinly sliced<br>3 toasted nori sheets, torn in half<br>Chili oil, toasted sesame oil, and shichimi togarashi (for serving)",
+        "prep" : "3 days",
+        "description": "Lush pork, toothsome noodles, and a heady broth you can't stop slurping—it's no wonder ramen joints are drawing droves of diners, off-duty chefs, and seemingly everyone on your Instagram feed. Bringing shoyu ramen home takes a trip to an Asian market, three days of work, and your largest pot, but this low-stress (really!) labor of love might be the best soup you'll ever make.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe1.jpg",
+        "instructions": "Two days ahead MAKE KOMBU DASHI AND TARE The stock's complexity comes from two elements: kombu dashi (a broth) and tare (a soybased mixture).* For the dashi, combine kombu and 4 quarts cold water in a large bowl. Cover and let sit at room temperature at least 8 hours and up to 12 hours. For the tare, combine soy sauce, sake, and mirin in a small bowl; cover and chill. One day ahead PREP PORK SHOULDER Season pork shoulder with salt and pepper. Roll up and tie with kitchen twine at 2 intervals. (This helps keep the meat intact while cooking and makes for round, compact slices.) COOK PORK SHOULDER AND MAKE STOCK Heat oil in a large heavy pot (at least 8 quarts) over medium-high heat. Cook pork shoulder, turning, until brown all over, 10-12 minutes. Add chicken, spareribs, scallions, carrots, garlic, ginger, and bonito flakes. Remove kombu from dashi; discard. Add as much kombu dashi as will fit in pot once liquid is boiling (reserve remaining dashi). Bring to a boil, reduce heat, and simmer, skimming the surface occasionally and adding remaining dashi as liquid reduces, until pork shoulder is tender and stock has reduced to about 2 quarts, 2 1/2-3 hours. CHILL PORK SHOULDER AND STOCK Remove pork shoulder from stock and let cool. Wrap tightly in plastic and chill until ready to use. (Chilling pork will make meat easier to slice.) Strain stock through a fine-mesh sieve into another large pot or a large bowl or container; discard solids (including ribs and chicken). Cover and chill. Day of COOK EGGS Bring a medium pot of water to a boil. Carefully add eggs one at a time and boil gently for 7 minutes. Egg yolks should be shiny yellow and almost jammy; egg white should be just set. Drain eggs and transfer to a bowl of ice water to stop cooking; let cool. Peel; set aside. (Eggs can be cooked 1 day ahead. Keep unpeeled eggs covered in cool water. Cover and chill.) SLICE PORK Remove string and thinly slice pork; cover and set aside. REHEAT STOCK AND COOK NOODLES When ready to serve, bring stock to a simmer; it should be very hot. At the same time, cook noodles in a large pot of boiling water according to package directions until al dente; drain (no need to salt the water, as ramen noodles contain more salt than pasta). Just before serving PUT IT ALL TOGETHER Divide noodles among 6 deep bowls. Top with sliced pork, placing it off to one side. Add tare to hot stock and ladle over pork to warm through (stock should come up just to the level of the noodles). Place a small pile of menma next to pork. Halve eggs and place next to menma. Place a small pile of sliced scallions next to egg. Tuck half a sheet of nori between side of bowl and noodles so it's just poking out. Serve ramen with chili oil, sesame oil, and shichimi togarashi.",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    },
+        {
+        "name" : "Breakfast Tacos",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "3 days",
+        "description": "Super-flavorful (and super-easy) homemade fresh chorizo and crispy hash brown potatoes take these tasty breakfast tacos to the next level.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe2.jpg",
+        "instructions": "",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    },
+        {
+        "name" : "Gardeners Pizza ",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "3 days",
+        "description": "{sauceless} When we found out our dear friends Katie and Parker got engaged, we packed up our pizza dough and big bag of greens from our garden and headed to their place for an impromptu celebration that's become a tradition in both our homes. Though the best pizza dough takes a little preparation {it gets more supple as it sits overnight}, a pizza topped with little more than fresh farmers' market finds can be thrown together on the fly like a grand game of Twister, with everyone's arms cutting, slicing, patting, and rolling in a tangle that is soon to become a very good dinner.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe3.jpg",
+        "instructions": "",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
+    },
+        {
+        "name" : "Pizza Margerhita",
+        "chefName" : "Alison Roman",
+        "ingredients": "",
+        "prep" : "1 3/4 hr",
+        "description": "The secret to a great pizza Margherita is to use the best ingredients you can find—and to approach them with restraint. (Just because a little cheese is good doesn't mean a lot will be better!) We always start with our all-time favorite pizza dough, adapted from chef Chris Bianco, of Pizzeria Bianco, in Phoenix. This slightly wet dough, in conjunction with a hot pizza stone, produces a crisp yet chewy crust, the perfect canvas for bright homemade tomato sauce, fresh mozzarella, and verdant basil leaves.",
+        "cooktime" : "1 hr",
+        "servings":"6",
+        "image": "images/recipePics/recipe4.jpg",
+        "instructions": "",
+        "sharedWith": ["Bianca", "Ishan", "Kim"]
     }
 ]

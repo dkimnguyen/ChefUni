@@ -30,10 +30,10 @@ function populateListsView(elementId, list) {
         newElement += "<div class=\"col-md-4\">";
         newElement += "<a href=\"recipeView.html\">";
         newElement += "<img class=\"img-responsive\" src=\"" + list[i].image +  "\" alt=\"\">";
-        newElement += "<p></p>";
-        newElement += "<span class=\"glyphicon glyphicon-edit\"></span>";
-        newElement += "<span class=\"glyphicon glyphicon-trash\"></span>";
         newElement += "</a>";
+        newElement += "<p></p>";
+        newElement += "<a><span class=\"glyphicon glyphicon-edit\"></span></a>";
+        newElement += "<a><span class=\"glyphicon glyphicon-trash\"></span></a>";
         newElement += "</div>";
         newElement += "<div class=\"col-md-5\">";
         newElement += "<h4>" + list[i].name + "</h4>";
