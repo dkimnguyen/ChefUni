@@ -1,0 +1,17 @@
+[
+   {"image" : "images/chefPics/chef1.jpg",
+        "chefName" : "Alison Roman",
+        "restraunt" : "Mingbo",
+        "description" : "Specializes in Pizza's"
+    },
+    {"image" : "images/chefPics/chef2.jpg",
+        "chefName" : "Gordon Ramsey",
+        "restraunt" : "Hell's Kitchen",
+        "description" : "Specializes in criticism"
+    },
+    {"image" : "images/chefPics/chef3.jpg",
+        "chefName" : "Bobbey Fillet",
+        "restraunt" : "Le Epic Food",
+        "description" : "This chef is known for the epicness of his food, the swesomeness of his restraunt."
+    }
+    ]
