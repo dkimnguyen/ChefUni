@@ -1,17 +1,26 @@
 [
-   {"image" : "images/chefPics/chef1.jpg",
+   {
+"chefID":"1",
+    "image" : "images/chefPics/chef1.jpg",
         "chefName" : "Alison Roman",
         "restraunt" : "Mingbo",
-        "description" : "Specializes in Pizza's"
+        "description" : "Specializes in Pizza's",
+        "recipeID" : ["1","2"]
     },
-    {"image" : "images/chefPics/chef2.jpg",
+    {
+        "chefID":"2",
+        "image" : "images/chefPics/chef2.jpg",
         "chefName" : "Gordon Ramsey",
         "restraunt" : "Hell's Kitchen",
-        "description" : "Specializes in criticism"
+        "description" : "Specializes in criticism",
+        "recipeID" : ["3","4"]
     },
-    {"image" : "images/chefPics/chef3.jpg",
+    {
+        "chefID":"3",
+        "image" : "images/chefPics/chef3.jpg",
         "chefName" : "Bobbey Fillet",
         "restraunt" : "Le Epic Food",
-        "description" : "This chef is known for the epicness of his food, the swesomeness of his restraunt."
+        "description" : "This chef is known for the epicness of his food, the awesomeness of his restraunt.",
+        "recipeID" : ["1","3"]
     }
     ]
