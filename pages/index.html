@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="chefUni">
+<html>
 <head>
 <meta charset="UTF-8">
   <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
@@ -13,7 +13,7 @@
 <base href="/">
 </head>
 
-<body>
+<body ng-app="chefUni">
  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -31,8 +31,8 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-.                    <li>
-                        <a class="page-scroll" href="#/recipes"><span class="glyphicon glyphicon-search"></span>  Search</a>
+                    <li>
+                        <a class="page-scroll" href="#/recipe"><span class="glyphicon glyphicon-search"></span>  Search</a>
                     </li>
                      <li>
                         <a class="page-scroll" href="#/">Home</a>
@@ -41,14 +41,19 @@
                         <a class="page-scroll" href="#/create">Create</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="">Chefs</a>
+                        <a class="page-scroll" href="#/chefs">Chefs</a>
                     </li>
                      <li>
                         <a class="page-scroll" href="#/recipes">Recipes</a>
                     </li>
-                     <li>
-                              <a class="page-scroll" href="#/contact"><span class="glyphicon glyphicon-user"></span></a>
-                            </li>
+
+                    <li>
+                        <a class="modal" href="#/login"><span class="glyphicon glyphicon-user"></span>LOGIN</a>
+                    </li>
+
+
+
+
 
                 </ul>
             </div>
@@ -61,83 +66,13 @@
 
 </div>
 
+<footer class="footer">
 
-    <!-- Footer -->
-    <footer>
         <div class="container text-center">
-            <p>Copyright &copy; .</p>
+            <p>Copyright &copy; Your Website 2014</p>
         </div>
     </footer>
-
-
-<div class="modal fade" id="user">
-<div class="container">
-  <div class="row">
-    <form class="form-signin mg-btm">
-      <h3 class="heading-desc">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-    Login</h3>
-
-    <div class="main">
-
-    <input type="text" class="form-control" placeholder="Email" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
-    <span class="clearfix"></span>
-        </div>
-    <div class="login-footer">
-    <div class="row">
-                        <div class="col-xs-6 col-md-6">
-                            <div class="left-section">
-                <a href="">Forgot your password?</a>
-                <a href="">Sign up now</a>
-              </div>
-                        </div>
-                        <div class="col-xs-1 col-md-6 pull-right">
-                            <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
-
-                        </div>
-                    </div>
-
     </div>
-      </form>
-  </div>
-</div>
-    </div><!-- /.modal-content -->
-
-
-<div class="modal fade" id="chef">
-<div class="container">
-  <div class="row">
-    <form class="form-signin mg-btm">
-      <h3 class="heading-desc">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-    Welcome Chef</h3>
-
-    <div class="main">
-
-    <input type="text" class="form-control" placeholder="Email" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
-    <span class="clearfix"></span>
-        </div>
-    <div class="login-footer">
-    <div class="row">
-                        <div class="col-xs-6 col-md-6">
-                            <div class="left-section">
-                <a href="">Forgot your password?</a>
-                <a href="">Sign up now</a>
-              </div>
-                        </div>
-                        <div class="col-xs-1 col-md-6 pull-right">
-                            <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
-
-                        </div>
-                    </div>
-
-    </div>
-      </form>
-  </div>
-</div>
-    </div><!-- /.modal-content -->
 
   <!--================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -164,9 +99,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-resource.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-sanitize.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-touch.js"></script>
+
     <script src="node_modules/controllers/app.js"></script>
    <script src="node_modules/controllers/recipeListController.js"></script>
-<script src="chefList.js"></script>
+   <script src="node_modules/controllers/chefListController.js"></script>
+
+   <script src="node_modules/controllers/recipeList.js"></script>
 
 </body>
+
 </html>
