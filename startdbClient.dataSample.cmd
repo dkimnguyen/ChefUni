@@ -1,0 +1,1 @@
+mongo --port 8010 -u dbAdmin -p test --authenticationDatabase admin
