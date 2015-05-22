@@ -8,31 +8,31 @@
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"2",
         "image" : "images/chefPics/chef2.jpg",
-        "chefName" : "Alison Roman",
+        "chefName" : "Roman",
         "restraunt" : "Mingbo",
-        "description" : "Specializes in Pizza's",
+        "description" : "Specializes in beer",
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"3",
         "image" : "images/chefPics/chef3.jpg",
-        "chefName" : "Alison Roman",
+        "chefName" : "oman",
         "restraunt" : "Mingbo",
         "description" : "Specializes in Pizza's",
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"4",
         "image" : "images/chefPics/chef4.jpg",
-        "chefName" : "Alison Roman",
+        "chefName" : "An",
         "restraunt" : "Mingbo",
         "description" : "Specializes in Pizza's",
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"5",
         "image" : "images/chefPics/chef5.jpg",
         "chefName" : "Alison Roman",
         "restraunt" : "Mingbo",
