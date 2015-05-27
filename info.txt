@@ -1,0 +1,12 @@
+Mongolabs info
+username: nguyen91
+Password: SeattleU19
+
+Requirements for final presentation
+3 users test, 2 existing users (For us one for a normal user, one for a chef) and response to a new or nonexisting user
+what happens when login with made-up user
+    Error
+login with different users -> different lists
+
+connecting to mongolabs via terminal
+mongo ds034878.mongolab.com:34878/chefuni -u chefUniAdmin -p test
