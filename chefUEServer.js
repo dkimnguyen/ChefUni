@@ -13,17 +13,11 @@ var Recipes;
 var Chefs;
 
 //put config url behind file to hide passwords and username
-//var mongoDBConnection = require('./db.dataSample.config');
+var mongoDBConnection = require('./db.chefUni.config');
+console.log(mongoDBConnection.uri);
 
-//console.log(mongoDBConnection.uri);
-
-mongoose.connect('mongodb://localhost/chefUniDB');
-//mongoose.connect(mongoDBConnection.uri);
-
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error'));
-
-db.once('open', function(callback){
+mongoose.connect(mongoDBConnection.uri);
+mongoose.connection.on('open', function () {
     var RecipeSchema = mongoose.Schema(
         {
             name: String,
@@ -56,6 +50,7 @@ db.once('open', function(callback){
     Chefs = mongoose.model('Chefs', ChefSchema);
     console.log('models have been created');
 });
+
 
 function retrieveAllRecipes(res) {
     console.log("in retrieveAllRecipes");
