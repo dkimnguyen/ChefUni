@@ -3,39 +3,55 @@
         "chefID":"1",
         "image" : "images/chefPics/chef1.jpg",
         "chefName" : "Alison Roman",
-        "restraunt" : "Mingbo",
+        "restaurant" : "Mingbo",
         "description" : "Specializes in Pizza's",
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"2",
         "image" : "images/chefPics/chef2.jpg",
-        "chefName" : "Alison Roman",
+<<<<<<< Updated upstream
+        "chefName" : "Roman",
         "restraunt" : "Mingbo",
+        "description" : "Specializes in beer",
+=======
+        "chefName" : "Alison Roman",
+        "restaurant" : "Mingbo",
         "description" : "Specializes in Pizza's",
+>>>>>>> Stashed changes
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"3",
         "image" : "images/chefPics/chef3.jpg",
-        "chefName" : "Alison Roman",
+<<<<<<< Updated upstream
+        "chefName" : "oman",
         "restraunt" : "Mingbo",
+=======
+        "chefName" : "Alison Roman",
+        "restaurant" : "Mingbo",
+>>>>>>> Stashed changes
         "description" : "Specializes in Pizza's",
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"4",
         "image" : "images/chefPics/chef4.jpg",
-        "chefName" : "Alison Roman",
+<<<<<<< Updated upstream
+        "chefName" : "An",
         "restraunt" : "Mingbo",
+=======
+        "chefName" : "Alison Roman",
+        "restaurant" : "Mingbo",
+>>>>>>> Stashed changes
         "description" : "Specializes in Pizza's",
         "recipeID" : ["1","2"]
     },
        {
-        "chefID":"1",
+        "chefID":"5",
         "image" : "images/chefPics/chef5.jpg",
         "chefName" : "Alison Roman",
-        "restraunt" : "Mingbo",
+        "restaurant" : "Mingbo",
         "description" : "Specializes in Pizza's",
         "recipeID" : ["1","2"]
     }
