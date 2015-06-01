@@ -1,11 +1,14 @@
 var express = require('express');
 var url = require('url');
 var mongoose = require('mongoose');
-//var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 var http = require('http');
 var app = express();
 app.set('port', process.env.PORT || 8010);
-
+app.use(bodyParser.urlencoded({extend: false}));
+app.use(bodyParser.json());
+var jsonParser = bodyParser.json();
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 //serve static content for the app from the 'pages'  directory in the app dir //
 //app.use('/images', express.static('./img')); //
@@ -107,6 +110,25 @@ app.get('/app/ChefList/:chefId', function (req, res){
     console.log('Query one chef with id: ' + id);
     retrieveChefDetails(res, {chefId: id});
 });
+//post a recipe
+app.post('/app/recipeList/', jsonParser, function (req, res){
+    console.log("In post");
+    var jsObj = req.body;
+    jsObj.recipeId = new moongoose.Types.ObjectId;
+    jsObj.owner = req.session.user;
+    console.log("new recipe submitted" + JSON.stringify(jsObj));
+    Recipes.create([jsObj], function (err) {
+        if (err) {
+            console.log('object creation failed');
+            displayDBError(err);
+        }
+        else {
+            console.log('object created: ' + jsObj);
+        }
+    });
+    res.send(jsObj.recipeId.valueOf());
+});
+
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
 });
