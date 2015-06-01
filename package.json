@@ -1,24 +1,22 @@
 {
   "name": "chefUni",
-  "version": "0.2.0",
-  "author": "nguyen91@seattleu.edu",
+  "version": "1.0.0",
   "description": "recipe app",
-  "main": "./server.js",
-  "keywords": [
-  "azure",
-  "boilerplate",
-  "express"
-  ],
-  "dependencies": {
-    "express": ">=4.12.3",
-    "mongoose": ">=4.0.2",
-    "angular-route": ">=1.3.15",
-    "mongodb-uri": "*"
-
+  "main": "chefUEServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "noAnalyze": true,
-  "license": "Apache",
-  "engines": {
-    "node": ">=0.12.2"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkimnguyen/chefUni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkimnguyen/chefUni/issues"
+  },
+  "homepage": "https://github.com/dkimnguyen/chefUni",
+  "dependencies": {
+    "express": "^4.12.3"
   }
 }
