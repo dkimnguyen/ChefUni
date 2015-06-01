@@ -2,7 +2,9 @@ var express = require('express');
 var url = require('url');
 var mongoose = require('mongoose');
 //var bodyParser = require('body-parser');
+var http = require('http');
 var app = express();
+app.set('port', process.env.PORT || 8010);
 
 
 //serve static content for the app from the 'pages'  directory in the app dir //
@@ -105,5 +107,6 @@ app.get('/app/ChefList/:chefId', function (req, res){
     console.log('Query one chef with id: ' + id);
     retrieveChefDetails(res, {chefId: id});
 });
-
-app.listen(8010);
+http.createServer(app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+});
