@@ -87,6 +87,7 @@ mongoose.connection.on('open', function () {
             name: String,
             recipeId: String,
             chefName: String,
+            chefID: String,
             ingredients: [String],
             prep: String,
             description: String,
