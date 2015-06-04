@@ -114,8 +114,7 @@ app.get('/app/ChefList/:chefId', function (req, res){
 //updating the comment on a recipe
 app.put('/app/recipeList/:recipeId', jsonParser, function(req, res) {
   var id = req.params.recipeId;
-  console.log("recipe id: " + id);
-    /*
+  console.log(id);
     return Recipes.findById(id, function (err, recipe) {
       console.log(req.body.comments);
       console.log(recipe);
@@ -128,11 +127,11 @@ app.put('/app/recipeList/:recipeId', jsonParser, function(req, res) {
                 console.log(err);
             }
         });
-        if (err){
-          console.log("here's the error " + err);
+        if(err){
+          console.log(err);
+          console.log("ldafjsldfja");
         }
     });
-    */
     // console.log(req.body.comments);
     // var id = req.params.recipeId;
     // var jsObj = req.body.comments;
