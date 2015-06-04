@@ -41,8 +41,6 @@ var app = express();
 var FACEBOOK_APP_ID = "1594882817465749";
 var FACEBOOK_APP_SECRET = "03e409705ea84562888c6f4147821562";
 
-
-
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -68,8 +66,6 @@ passport.use(new FacebookStrategy({
     });
   }
 ));
-
-
 
 app.set('port', process.env.PORT || 8010);
 
@@ -146,6 +142,17 @@ function retrieveChefDetails( res, query){
     });
 }
 
+// Middleware to ensure user is authenticated.
+//   Use this route middleware on any resource that needs to be protected.  If
+//   the request is authenticated (typically via a persistent login session),
+//   the request will proceed.  Otherwise, the user will be redirected to the
+//   login page.
+function ensureAuthenticated(req, res, next) {
+  if (req.isAuthenticated()) { return next(); }
+  res.redirect('/login')
+}
+
+
 
 app.use('/', express.static('./pages'));
 app.use('/app/json/', express.static('./app/json'));
@@ -169,12 +176,6 @@ app.get('/app/recipeList/', function (req, res){
     res.render('/', {});
   }
 
-
-
-
-
-
-
 });
 
 app.get('/app/recipeList/:recipeId', function (req, res){
@@ -191,45 +192,6 @@ app.get('/app/ChefList/:chefId', function (req, res){
     var id = req.params.chefId;
     console.log('Query one chef with id: ' + id);
     retrieveChefDetails(res, {chefId: id});
-});
-
-
-http.createServer(app).listen(app.get('port'), function(){
-    console.log("Express server listening on port " + app.get('port'));
-});
-
-//----------------------------------------------------------------------------------------------------------------
-
-
-//serve static content for the app from the 'pages'  directory in the app dir //
-//app.use('/images', express.static('./img')); //
-//app.use(express.static('./pages')); //
-
-
-app.get('/layout', function(req, res){
-  if (req.isAuthenticated()) {
-    res.render('layout', { user: req.user });
-  }
-  else {
-    res.render('error', {});
-  }
-});
-
-//app.get('/account', ensureAuthenticated, function(req, res){
-app.get('/account', function(req, res){
-    if (req.isAuthenticated()) {
-    console.log('=============>user authenticated');
-      res.render('account', { user: req.user });
-      var u = req.user;
-      Object.keys(u).forEach(function (key) {
-        console.log("Key:" + key);
-        console.log("Value:" + u[key]);
-      });
-  }
-  else {
-    console.log('=============>user authenticated');
-    res.render('error', {});
-  }
 });
 
 app.get('/login', function(req, res){
@@ -255,12 +217,23 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-// Middleware to ensure user is authenticated.
-//   Use this route middleware on any resource that needs to be protected.  If
-//   the request is authenticated (typically via a persistent login session),
-//   the request will proceed.  Otherwise, the user will be redirected to the
-//   login page.
-function ensureAuthenticated(req, res, next) {
-  if (req.isAuthenticated()) { return next(); }
-  res.redirect('/login')
-}
+/*
+app.post('/app/lists/', jsonParser, function(req, res) {
+  console.log(req.body);
+  var jsonObj = req.body;
+  jsonObj.listId = idGenerator;
+  Lists.create([jsonObj], function (err) {
+    if (err) {
+      console.log('object creation failed');
+    }
+  });
+  res.send(idGenerator.toString());
+  idGenerator++;
+});
+*/
+
+http.createServer(app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+});
+
+//----------------------------------------------------------------------------------------------------------------
