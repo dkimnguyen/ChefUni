@@ -114,12 +114,9 @@ app.get('/app/ChefList/:chefId', function (req, res){
 //updating the comment on a recipe
 app.put('/app/recipeList/:recipeId', jsonParser, function(req, res) {
   var id = req.params.recipeId;
-  console.log(id);
-    return Recipes.findById(id, function (err, recipe) {
-      console.log(req.body.comments);
-      console.log(recipe);
+    return Recipes.find({recipeId: id}, function (err, recipe) {
         recipe.comments = req.body.comments;
-        return recipe.save(function (err) {
+        return Recipes.update({recipeId: id}, {comments: recipe.comments}, function (err) {
             if (!err) {
                 console.log("updated");
             } else {
@@ -129,34 +126,10 @@ app.put('/app/recipeList/:recipeId', jsonParser, function(req, res) {
         });
         if(err){
           console.log(err);
-          console.log("ldafjsldfja");
         }
     });
-    // console.log(req.body.comments);
-    // var id = req.params.recipeId;
-    // var jsObj = req.body.comments;
-    // //jsObj.owner = req.session.user;
-    // Recipes.update({recipeID: id}, { $push: { comments: jsObj} });
     res.sendStatus(200);
 });
-//post a recipe
-// app.post('/app/recipeList/', jsonParser, function (req, res){
-//     console.log("In post");
-//     var jsObj = req.body;
-//     jsObj.recipeId = new moongoose.Types.ObjectId;
-//     jsObj.owner = req.session.user;
-//     console.log("new recipe submitted" + JSON.stringify(jsObj));
-//     Recipes.create([jsObj], function (err) {
-//         if (err) {
-//             console.log('object creation failed');
-//             displayDBError(err);
-//         }
-//         else {
-//             console.log('object created: ' + jsObj);
-//         }
-//     });
-//     res.send(jsObj.recipeId.valueOf());
-// });
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
