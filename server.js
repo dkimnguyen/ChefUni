@@ -14,6 +14,8 @@ var mongoose = require('mongoose');
 //var bodyParser = require('body-parser');
 var http = require('http');
 var app = express();
+var jsonParser = bodyParser.json();
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 
 // configure Express
@@ -52,7 +54,8 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new FacebookStrategy({
     clientID: FACEBOOK_APP_ID,
     clientSecret: FACEBOOK_APP_SECRET,
-    callbackURL: "http://chefuni.azurewebsites.net/auth/facebook/callback"
+    callbackURL: "http://chefuni.azurewebsite.net/auth/facebook/callback"
+    //callbackURL: "http://me.localtest.me:8010/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
@@ -215,6 +218,24 @@ app.get('/auth/facebook/callback',
 app.get('/logout', function(req, res){
   req.logout();
   res.redirect('/');
+});
+app.put('/app/recipeList/:recipeId', jsonParser, function(req, res) {
+  var id = req.params.recipeId;
+    return Recipes.find({recipeId: id}, function (err, recipe) {
+        recipe.comments = req.body.comments;
+        return Recipes.update({recipeId: id}, {comments: recipe.comments}, function (err) {
+            if (!err) {
+                console.log("updated");
+            } else {
+              console.log("in error");
+                console.log(err);
+            }
+        });
+        if(err){
+          console.log(err);
+        }
+    });
+    res.sendStatus(200);
 });
 
 /*
