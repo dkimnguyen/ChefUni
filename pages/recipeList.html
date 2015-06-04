@@ -1,0 +1,31 @@
+<div class="container" ng-controller='recipeListCtrl' ng-init='getRecipes()'>
+
+    <div ng-show="recipe" ng-repeat='recipe in recipes'>
+        <div class="row">
+            <div class="col-md-4">
+                <!--place link to recipe-->
+
+                <a href="">
+                    <img class="img-responsive"src="{{recipe.image}}">
+                </a>
+                <a href=""><span class="glyphicon glyphicon-edit"></span></a>
+                <a href=""><span class="glyphicon glyphicon-trash"></span></a>
+            </div>
+
+            <div class="col-md-5">
+                <h4>{{recipe.recipeName}}</h4>
+                <h5>Description</h5>
+                <p>{{recipe.desc}}</p>
+
+                <!--place link to recipe-->
+                <a href="#/recipeView">View Full Recipe<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+            <div class="col-md-3" ng-repeat="person in recipe.sharedWith">
+                <h4>Shared With</h4>
+                <li>{{person}}</li>
+            </div>
+        </div>
+<hr>
+    </div>
+</div>
