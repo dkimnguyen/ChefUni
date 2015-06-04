@@ -113,15 +113,24 @@ app.get('/app/ChefList/:chefId', function (req, res){
 });
 //updating the comment on a recipe
 app.put('/app/recipeList/:recipeId', jsonParser, function(req, res) {
-    return Recipes.findById(req.params.id, function (err, recipe) {
-        Recipes.comments = req.body.comments;
-        return product.save(function (err) {
+  var id = req.params.recipeId;
+  console.log(id);
+    return Recipes.findById(id, function (err, recipe) {
+      console.log(req.body.comments);
+      console.log(recipe);
+        recipe.comments = req.body.comments;
+        return recipe.save(function (err) {
             if (!err) {
                 console.log("updated");
             } else {
+              console.log("in error");
                 console.log(err);
             }
         });
+        if(err){
+          console.log(err);
+          console.log("ldafjsldfja");
+        }
     });
     // console.log(req.body.comments);
     // var id = req.params.recipeId;
